@@ -1,0 +1,68 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 300px;
+            height: 300px;
+            background-color: chocolate;
+            border: 5px solid green;
+            border-radius: 20px;
+        }
+        #a{
+            width: 300px;
+            height: 300px;
+            background-color: chocolate;
+            border: 5px solid green;
+            /* when given one value four sides wiil effect */
+            border-radius: 400px;
+        }
+        #b{
+            width: 300px;
+            height: 300px;
+            background-color: aqua;
+            border: 5px solid black;
+            border-top-left-radius: 0px;
+            border-top-right-radius: 100%;
+            border-bottom-right-radius: 0px;
+            border-bottom-left-radius: 100%;
+        }
+        #c{
+            width: 300px;
+            height: 300px;
+            background-color: aqua;
+            border: 5px solid black;
+            /* top left,top right,bottom right,bottom left */
+            border-radius: 100px 50px 70px 30px;
+        }
+        #d{
+            width: 300px;
+            height: 300px;
+            background-color: aqua;
+            border: 5px solid black;
+            border-radius: 100px 30px;
+            /* when given two vales it effect (top left-bottom right),(top right-bottom left)*/
+        }
+        #e{
+            width: 300px;
+            height: 300px;
+            background-color: aqua;
+            border: 5px solid black;
+            border-radius: 100px 30px 40px;
+            /* when given three values it effect (top left),(top right-bottom left),(bottom right) */
+        }
+
+    </style>
+ </head>
+ <body>
+ </body>
+ <div><h1>hiiiiiiiii</h1></div>
+ <div id="a"></div>
+ <div id="b"></div>
+ <div id="c"></div>
+ <div id="d"></div>
+ <div id="e"></div>
+ </html>
