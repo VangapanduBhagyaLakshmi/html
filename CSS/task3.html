@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #a{
+            width: 100%;
+            height: 200px;
+            background-image: url(./stars.png);
+            background-repeat: no-repeat;
+            display: flex;
+            align-items: center;
+            font-style: italic;
+            letter-spacing: 70px;
+            color: white;
+            font-size: 80px;
+            padding-left: 300px;
+            
+        }
+        #b{
+            width: 100%;
+            height: 500px;
+            background-image: url(./nature.png);
+            background-repeat: no-repeat;
+        }
+    
+        #d{
+            width: 20%;
+            height: 350px;
+            background-color: grey;
+            position: fixed;
+            left: 500px;
+            top: 300px;
+            letter-spacing: 10px;
+        }
+        #c{
+            width: 35%;
+            height: 350px;
+            background-color: black;
+            position: fixed;
+            left: 100px;
+            top: 300px;
+        }
+        video{
+              position: fixed;
+              left: 100px;
+              top: 250px;
+        }
+        input{
+            border-radius: 20px;
+            border: 2px solid black;
+        }
+        #e{
+            width: 10%;
+            height: 350px;
+            background-color: rgba(128, 128, 128, 0.321);
+            position: fixed;
+            left: 800px;
+            top: 300px;
+        }
+    
+    </style>
+</head>
+<body>
+    <div id="a">Get out !</div>
+    <div id="b">
+        <div id="c">
+            <video src="video.mp4" controls autoplay loop muted style="height: 400px;width: 30%;"></video>
+        </div>
+         <form>
+            <div id="d">
+                <center>
+                    <br><br><br>
+                LOGIN
+              <br><br><br>
+              <input placeholder="Email ID or Number" type="email" >
+              <br><br>
+              <input placeholder="password" type="password">
+              <br><br>
+              <button style="color: white;background-color: black;">Login</button></center>
+            </div>
+        </form>
+        <div id="e"></div>
+    </div>
+</div>
+</body>
+</html>
