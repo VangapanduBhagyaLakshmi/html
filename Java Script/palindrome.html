@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let st=prompt('enter value')
+        res=''
+        i=0
+        while (i<st.length)
+        {
+            res=st[i]+res
+            i+=1
+        }
+    if (st==res)
+    {
+        alert(res);
+        alert(typeof res)
+        let res1=parseInt(res) 
+        alert(typeof res1)
+        alert("palindrome");
+    }
+    else{
+        alert("not palindrome");
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // function areaOfCirlce(a)
+        // {
+        //     console.log(a)
+        //     a(20)
+        // }
+        // areaOfCirlce(
+        //     function(radius)
+        //     {
+        //         const PI=3.14;
+        //         let areaOfCirlce=PI*radius*radius
+        //         console.log(areaOfCirlce)
+        //     }
+        // )
+
+
+        // function areaOfCirlce(a,b)
+        // {
+        //     console.log(a)
+        //     a(20)
+        //     console.log(b)
+        //     b(2,5)
+        // }
+        // areaOfCirlce(
+        //     function(radius)
+        //     {
+        //         const PI=3.14;
+        //         let areaOfCirlce=PI*radius*radius
+        //         console.log(areaOfCirlce)
+        //     },
+        //     function(length,breadth)
+        //     {
+        //         areaOfRectangle=length*breadth
+        //         console.log(areaOfRectangle)
+        //     }
+        // )
+
+
+        function areaOfCirlce(a,b)
+        {
+            console.log(a)
+            let a1=a(20)
+            console.log(a)
+            console.log(b)
+            b(a1,5)
+        }
+        areaOfCirlce(
+            function(radius)
+            {
+                const PI=3.14;
+                let areaOfCirlce=PI*radius*radius
+                console.log(areaOfCirlce)
+                return areaOfCirlce;
+            },
+            function(length,breadth)
+            {
+                areaOfRectangle=length*breadth
+                console.log(areaOfRectangle)
+            }
+        )
+
+    </script>
+</body>
+</html>

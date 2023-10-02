@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Glassbowl(raweggs,masala){
+            let a=raweggs+masala
+            return a
+              
+        }
+        let marinatedeggs=Glassbowl(10,'ginger,garlic,salt,chillipowder,cinamion')
+        console.log(`eggs are marinated with :${marinatedeggs}`)
+
+        function cookingbowl(eggs,water)
+        {
+            let b=eggs+water
+            return b
+        }
+        let cookedeggs=cookingbowl(marinatedeggs,3)
+        console.log(`eggs are cooked using:${cookedeggs}`)
+
+        function eatingbowl(ceggs,rice)
+        {
+            let c=rice+ceggs
+            return c
+        }
+        let eatingplate=eatingbowl(cookedeggs,2)
+        console.log(`eating 2kg rice with 10eggs briyan on plate cooked with:${eatingplate}`)
+
+    </script>
+</body>
+</html> 

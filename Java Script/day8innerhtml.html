@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    NAME:<input type="text" id="name">
+    <br><br>
+    <p id="p1"></p>
+    PHONE Number: <input type="text" id="phone">
+    <br><br>
+    <p id="p2"></p>
+    <button onclick="demo()">CLICK</button>
+    <script>
+        function demo()
+        {
+            let name1=document.getElementById("name").value;
+            // let a= document.getElementById("p1")
+            // a.innerHTML="my name is :" + name1
+            // console.log(a)
+            document.getElementById("p1").innerHTML="My name is :"
+
+            let phone1=document.getElementById("phone").value;
+            // let b=document.getElementById("p2")
+            // b.innerHTML="my phone no is :" +phone1
+            // console.log(b)
+            document.getElementById("p2").innerHTML="My phone no is:"
+            
+        }
+    </script>
+</body>
+</html>

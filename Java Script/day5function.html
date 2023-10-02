@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <button onclick="abc()">click</button> -->
+    <script>
+        // function abc()
+        // {
+        //     print()
+        // }
+        // abc()
+
+
+        // anonymous function
+        // 1.varible declaration
+         
+        let a=function()
+        {
+            console.log("welcome to anonymous function...")
+        }
+        // console.log(a)
+        a()
+        let num=function (radius)
+        {
+            const PI=3.14;
+            let areaOfCircle=PI*radius*radius;
+            console.log(`The area of circle is ${areaOfCircle}`)
+            return areaOfCircle;
+        }
+        // console.log(num)
+        // num(5)
+        
+        let num1=num(5)
+        console.log(num1) 
+
+        let num2=function(length,breadth)
+        {
+            let areaOfRectangle=length*breadth;
+            console.log(`The area of rectangle is: ${areaOfRectangle}`)
+        }
+        // console.log(num2)
+        // num2(num1,10)
+
+        // let a=20;
+        // console.log(a)
+
+        // IIFE()
+
+        
+        // (function()
+        // {
+        //     console.log("welcome to IIFE")
+        // })
+        // ()
+
+        (function(a)
+        {
+            console.log(a)
+            console.log("asdfg");
+            return a;
+        })
+        (20)
+        // let a=(20);
+        // console.log(a)
+
+        // let a=20;
+        // console.log(a)
+        // let b=(20);
+        // console.log(b)
+        
+
+
+    </script>
+</body>
+</html>

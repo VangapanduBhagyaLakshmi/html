@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="name1">N AME:</label><input type="text" id="name1">
+    <br><br>
+    <label for="phone">PHONE:</label><input type="text" id="phone">
+    <button onclick="details()">CLICK</button>
+    <script>
+        function details()
+        {
+            let a=document.getElementById("name1");
+            // a=document.getElementById("name1"),here a targeting inputbox
+            console.log(a)
+            let b=document.getElementById("name1").value;
+            // here b targeting value from inputbox to recieve the value
+            console.log("user name is : " +b);
+            // to count characters in given name
+            let count1=b.length;
+            console.log(count1)
+
+
+
+            let p=document.getElementById("phone");
+            console.log(p)   
+            let p1=document.getElementById("phone").value;
+            console.log("user phone is : " + p1)
+            // to count digits in given number
+            let count2=p1.length;
+            console.log(count2)
+
+        }
+
+    </script>
+</body>
+</html>
