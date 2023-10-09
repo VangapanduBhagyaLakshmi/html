@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>SELECT YOUR GENDER</h1>
+    <input type="radio" value="FEMALE" name="gender">FEMALE
+    <br><br>
+    <input type="radio" value="MALE" name="gender">MALE
+    <br><br>
+    <input type="radio" value="others" name="gender">others
+    <br><br>
+    <button onclick="demo()">CLICK</button>
+    <h1 id="abc"></h1>
+
+    <script>
+        function demo()
+        {
+            let num=document.getElementsByName("gender");
+            console.log(num)
+
+            // let count=0;
+            for(i=0;i<=num.length-1;i++)
+            {
+                // count++;
+
+                let check1=num[i].checked;
+                console.log(check1)
+                if(num[i].checked==true)
+                // checked gives true or false(boolean values)
+                {
+                    let value1=num[i].value; 
+                    // console.log(value1)
+                    document.getElementById("abc").innerHTML="user selected gender is : "+value1
+
+                }
+            }
+            // document.getElementById("abc"),innerHTML="count of radio buttons is :" +count
+        }
+    </script>
+</body>
+</html>

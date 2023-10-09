@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #abc{
+            background-color: yellow;
+            color: red;
+            padding: 10px;
+        }
+        .abc1{
+            font-size: 40px;
+        }
+    </style>
+</head>
+<body>
+  <h1>welcome to attributes</h1>
+  <p title="abc">WELCOME</p>
+  <button on onclick="abc()">SUBMIT</button>
+
+  <script>
+    function abc(){
+        let a=document.querySelector("h1")
+        console.log(a)
+    
+    // a.style.backgroundColor="yellow"
+    // a.style.color="red"
+    // a.style.padding="10px"
+
+    a.setAttribute("id","abc")
+    a.setAttribute("class","abc1")
+    a.removeAttribute("class")
+    let c=a.hasAttribute("id")
+    console.log(c)
+    }
+  </script>
+
+</body>
+</html>

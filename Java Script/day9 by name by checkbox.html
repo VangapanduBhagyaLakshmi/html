@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>SELECT YOUR SKILLS</h1>
+    <input type="checkbox" value="JAVA" name="python">JAVA
+    <br><br>
+    <input type="checkbox" value="SQL" name="sql">sql
+    <br><br>
+    <input type="checkbox" value="PYTHON" name="java">PYTHON
+    <br><br>
+    <input type="checkbox" value="WEB" name="html">WEB
+    <br><br>
+    <input type="checkbox" value="TESTING" name="css">TESTING
+    <br><br>
+    <input type="checkbox" value="REACT JS" name="react js">REACT JS
+    <br><br>
+    <input type="checkbox" value="ANGULAR JS" name="react js">ANGULAR JS
+    <button onclick="demo()">CLICK</button>
+    <h1 id="abc"></h1>
+     
+    <script>
+    function demo()
+    {
+        let a=document.querySelectorAll("input")
+        console.log(a)
+        let count=0;
+
+        for (i=0;i<=a.length-1;i++)
+        {
+            if (a[i].checked)
+            {
+                count++;
+                if (count<3)
+            
+            {
+                document.querySelector("#abc").innerHTML="not eligible for any job"
+            }
+            else if(count==3 || count<5)
+            {
+                document.querySelector("#abc").innerHTML="eligible for 1 job"
+
+            }
+            else if(count==5 || count<7)
+            {
+                document.querySelector("#abc").innerHTML="eligible for 2 job"
+
+            }
+            else 
+            {
+                document.querySelector("#abc").innerHTML="eligible for any job"
+
+            }
+        }
+    }
+}
+
+    </script>
+</body>
+</html>

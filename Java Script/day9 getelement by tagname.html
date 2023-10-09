@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>welcome to tagname</h2>
+    <h2>welcome to tagname</h2>
+    <h2>welcome to tagname</h2>
+    <h2>welcome to tagname</h2>
+    <h2>welcome to tagname</h2>
+
+    <button onclick="demo()">SUBMIT</button>
+
+    <script>
+        function demo()
+        {
+            let b=document.getElementsByTagName("h2");
+            console.log(b)
+            // for (i=0;i<=b.length-1;i++)
+            // {
+            //     b[i].style.backgroundColor="aqua"
+            //     b[i].style.color="red"
+            // }
+                //   or
+
+            b[0].style.backgroundColor="aqua"
+            b[1].style.backgroundColor="red"
+            b[2].style.backgroundColor="orange"
+            b[3].style.backgrounCcolor="green"
+            b[4].style.backgroundColor="yellow"
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="name">ENTER NAME:</label>
+    <input type="text" id="name" class="name1" title="welcome">
+    <br><br>
+    <button onclick="demo()">SUBMIT</button>
+
+    <script>
+        function demo()
+        {
+        //    1. by using id with value and without value
+            // let a=document.querySelector("#name")
+            // console.log(a)
+            // let a=document.querySelector("#name").value;
+            // console.log(a)
+
+            // 2. by using classname with value and without value
+            // let b=document.querySelector(".name1")
+            // console.log(b)
+            // let b=document.querySelector(".name1").value;
+            // console.log(b)
+
+            // 3. by using tagname with value and without value
+            // let c=document.querySelector("input")
+            // console.log(c)
+            // let c=document.querySelector("input").value;
+            // console.log(c)
+
+            // 4. by using attribute with value and without value
+            // let d=document.querySelector("[title='welcome']")
+            // console.log(a)
+            // let d=document.querySelector("[title='welcome']").value;
+            // console.log(a)
+
+            // 5. by using attribute with value , with value and without value
+            // let f=document.querySelector("[title]")
+            // console.log(f)
+            let f=document.querySelector("[title]").value;
+            console.log(f)
+            
+        }
+    </script>
+</body>
+</html>

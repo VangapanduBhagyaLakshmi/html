@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">  
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <h1 class="abc">welcome to classname</h1>
+     <h1>welcome to classname</h1>
+     <h1 class="=abc">welcome to classname</h1>
+     <h1 class="abc">welcome to classname</h1>
+     <h1>welcome to classname</h1>
+     <h1>welcome to classname</h1>
+
+     <button onclick="demo()">SUBMIT</button>
+
+    <script>
+        function demo()
+        {
+            let a=document.getElementsByClassName("abc");
+            console.log(a) 
+
+            for(i=0;i<=a.length-1;i++)
+            {
+                a[i].style.color="red"
+                a[i].style.backgroundColor="green"
+                a[i].style.padding="20px"
+            }
+        }
+
+    </script>
+</body>
+</html>
