@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let img1=document.createElement("img")
+        img1.src="butter8.jpg"
+
+        let img2=document.createElement("img")
+        img2.src="butter3.jpg"
+
+        let b=document.body;
+        b.append(img1)
+        b.append(img2)
+
+
+    //   here removing img2
+        // b.removeChild(img2)
+
+        // here replacing img1 with img2
+
+        b.replaceChild(img2,img1)
+
+    </script>
+</body>
+</html>

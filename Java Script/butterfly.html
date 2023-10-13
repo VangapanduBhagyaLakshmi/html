@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .abc{
+            height: 50px;
+            width:610px;
+            background-color: violet;
+            color: yellowgreen;
+            text-shadow: 1px 1px 1px black, -1px 1px 1px  black, 1px -1px 1px black, -1px -1px 1px black;
+            text-align: center;
+            padding-top: 20px;
+            font-size:30px;
+        }
+        #b{
+            height: 610px;
+            width: 610px;
+            background-color: aqua;
+        }
+        .div{
+            height: 200px;
+            width: 200px;
+            background-color: pink;
+            border-radius: 30px;
+            float: left;
+            border: 2px solid saddlebrown;
+        }
+        .xyz{
+            height: 100px;
+            width: 100px;
+            background-color: darkslategray;
+            border-radius: 30px;
+            margin-top: 50px;
+            margin-left: 50px;
+        }
+        .img{
+            height: 100px;
+            width: 100px;
+            border-radius: 30px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        let div=document.createElement("div")
+        div.classList.add("abc")
+        div.innerHTML=`PHOTO FRAME`
+        console.log(div)
+        let body=document.body
+        body.append(div)
+
+        let div1=document.createElement("div")
+        div1.setAttribute("id","b")
+        console.log(div1)
+        body.append(div1)
+        
+        let div11=document.createElement("div")
+        div11.classList.add("div")
+        console.log(div11)
+        div1.append(div11)
+        
+        let div12=document.createElement("div")
+        div12.classList.add("div")
+        console.log(div12)
+        div1.append(div12)
+
+        let div13=document.createElement("div")
+        div13.classList.add("div")
+        console.log(div13)
+        div1.append(div13)
+
+        let div21=document.createElement("div")
+        div21.classList.add("div")
+        console.log(div21)
+        div1.append(div21)
+
+        let div22=document.createElement("div")
+        div22.classList.add("div")
+        console.log(div22)
+        div1.append(div22)
+
+        let div23=document.createElement("div")
+        div23.classList.add("div")
+        console.log(div23)
+        div1.append(div23)
+
+        let div31=document.createElement("div")
+        div31.classList.add("div")
+        console.log(div31)
+        div1.append(div31)
+
+        let div32=document.createElement("div")
+        div32.classList.add("div")
+        console.log(div32)
+        div1.append(div32)
+
+        let div33=document.createElement("div")
+        div33.classList.add("div")
+        console.log(div33)
+        div1.append(div33)
+
+        let a1=document.createElement("div")
+        a1.classList.add("xyz")
+        console.log(a1)
+        div11.append(a1)
+
+        let a2=document.createElement("div")
+        a2.classList.add("xyz")
+        console.log(a2)
+        div12.append(a2)
+
+        let a3=document.createElement("div")
+        a3.classList.add("xyz")
+        console.log(a3)
+        div13.append(a3)
+
+        let a4=document.createElement("div")
+        a4.classList.add("xyz")
+        console.log(a4)
+        div21.append(a4)
+
+        let a5=document.createElement("div")
+        a5.classList.add("xyz")
+        console.log(a5)
+        div22.append(a5)
+
+        let a6=document.createElement("div")
+        a6.classList.add("xyz")
+        console.log(a6)
+        div23.append(a6)
+
+        let a7=document.createElement("div")
+        a7.classList.add("xyz")
+        console.log(a7)
+        div31.append(a7)
+
+        let a8=document.createElement("div")
+        a8.classList.add("xyz")
+        console.log(a8)
+        div32.append(a8)
+
+        let a9=document.createElement("div")
+        a9.classList.add("xyz")
+        console.log(a9)
+        div33.append(a9)
+
+        let pic1=document.createElement("img")
+        pic1.src=`butter.jpg`
+        pic1.classList.add("img")
+        console.log(pic1)
+        a1.append(pic1)
+
+        let pic2=document.createElement("img")
+        pic2.src=`butter1.jpg`
+        pic2.classList.add("img")
+        console.log(pic2)
+        a2.append(pic2)
+
+        let pic3=document.createElement("img")
+        pic3.src=`butter2.jpg`
+        pic3.classList.add("img")
+        console.log(pic3)
+        a3.append(pic3)
+
+        let pic4=document.createElement("img")
+        pic4.src=`butter3.jpg`
+        pic4.classList.add("img")
+        console.log(pic4)
+        a4.append(pic4)
+
+        let pic5=document.createElement("img")
+        pic5.src=`butter4.jpg`
+        pic5.classList.add("img")
+        console.log(pic5)
+        a5.append(pic5)
+
+        let pic6=document.createElement("img")
+        pic6.src=`butter5.jpg`
+        pic6.classList.add("img")
+        console.log(pic6)
+        a6.append(pic6)
+
+        let pic7=document.createElement("img")
+        pic7.src=`butter6.jpg`
+        pic7.classList.add("img")
+        console.log(pic7)
+        a7.append(pic7)
+
+        let pic8=document.createElement("img")
+        pic8.src=`butter7.jpg`
+        pic8.classList.add("img")
+        console.log(pic8)
+        a8.append(pic8)
+
+        let pic9=document.createElement("img")
+        pic9.src=`butter8.jpg`
+        pic9.classList.add("img")
+        console.log(pic9)
+        a9.append(pic9)
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- creating fieldset -->
+
+    <script>
+        let f=document.createElement("fieldset")
+        f.style.width="300px"
+        f.style.height="300px"
+
+        let b=document.body;
+    
+        let legend=document.createElement("legend")
+        legend.innerHTML="STUDENT DETAILS"
+        f.style.textAlign="center"
+
+        f.innerHTML=`
+        <table>
+            <tr>
+                <td> NAME</td>
+                <td> :</td>
+                <td><input type="text"> </td>
+                
+                </tr>
+                <tr>
+                <td> phone</td>
+                <td> :</td>
+                <td><input type="text"> </td>
+                </tr>
+
+                <tr>
+                <td> </td>
+                <td> </td>
+                <td> <center><input type="submit"></center> </td>
+                
+                </tr>
+
+            </table>`
+            b.append(f)
+            f.append(legend)
+            console.log(f)
+            console.log(legend)
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="name">ENTER YOUR NAME</label>
+    <input type="text" id="name"> 
+    <br>
+    <button onclick="demo()">SUBMIT</button> 
+    <h1 id="abc"></h1>
+    <h1 id="xyz"></h1>
+    <script> 
+
+        function demo()
+        {
+        let a=document.querySelector("#name").value;
+        document.querySelector("#abc").innerHTML=`<mark> user name is : ${a}</mark`
+        document.querySelector("#xyz").innerText=`<mark> user name is : ${a}</mark`
+        }
+       
+
+    </script>
+</body>
+</html>

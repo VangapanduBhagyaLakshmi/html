@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //  IMAGE CREATION
+
+        let img=document.createElement("img")
+        console.log(img)
+        img.src=`butter.jpg`
+        let body=document.body;
+        body.append(img)
+        img.width="300"
+        img.height="300"
+        img.alt="IMAGE"
+
+
+        // video creation
+
+        let video=document.createElement("video");
+        console.log(video)
+        video.src=`video.mp4`
+        video.controls="controls"
+        body.append(video)
+        // video.autoplay="autoplay"
+        // video.muted="muted"
+        video.autoplay=true;
+        video.muted=true;
+        video.width="300"
+        video.height="300" 
+
+
+
+        // audio creation
+
+        let audio=document.createElement("audio");
+        console.log(audio)
+        audio.src=`AUDIO.mp3`
+        audio.controls="controls"
+        body.append(audio)
+        // audio.autoplay="autoplay"
+        // audio.muted="muted"
+        audio.autoplay=true;
+        audio.muted=true;
+        
+
+    </script>
+</body>
+</html>

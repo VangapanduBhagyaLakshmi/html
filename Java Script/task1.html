@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let s=document.createElement("select");
+        let p=document.createElement("option")
+        p.innerHTML="---select branch---"
+        s.append(p)
+    
+        let arr=["BIHAR","GOA","MAHARASTRA","KARNATAKA","CHATTISGARH","PUNJAB","WEST BENGAL","MIZORAM","AP","TRIPURA"
+        ,"GUJARAT","ASSAM","MANIPUR","HARYANA","HIMACHAL PRADESH","MADHYAPRADESH","RAJASTHAN","TN","ODISHA","NAGALAND","KERALA"
+        ,"UP","JHARKHAND","SIKKIM","ARUNACHAL","MEGHALAYA","TELANGANA","UTTARKHAND","DELHI","J&K"]
+        console.log(arr)
+        let arr1=arr.sort()
+        console.log(arr1)
+    
+    
+        for(i=0;i<=arr1.length-1;i++)
+        {
+            let p1=document.createElement("option")
+            console.log(p1)
+            // p1.innerHTML=arr1[i]
+            let c=document.createTextNode(arr1[i]);
+            console.log(c)
+            p1.append(c)
+            s.append(p1)
+        }
+    
+        let b=document.body
+        b.append(s)
+        </script>
+</body>
+</html>

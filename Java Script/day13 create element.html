@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .abc{
+            background-color: pink;
+            color: red;
+            font-size: 20px;
+            font-style: oblique;
+        }
+        #ab{
+            color: green;
+            font-size: 20px;
+
+        }
+    </style>
+</head>
+<body>
+    <script>
+
+        // by using h3 tag
+
+        let h3=document.createElement("h3")
+        // for getting text inside the tag
+        h3.innerHTML=`welcome to dom manipiluation`
+        console.log(h3);
+        // for this text getting properties
+        h3.classList.add("abc")
+        //to get text on webpage append to the body 
+        let b=document.body;
+        b.append(h3)
+        console.log(b)
+
+        // by using i tag
+
+        let i=document.createElement("i")
+        i.innerHTML=`welcome to italic tag`
+        console.log(i)
+        i.setAttribute("id","ab")
+        b.append(i)
+
+
+        // by using marquee tag
+
+        let mar=document.createElement("marquee")
+        mar.innerHTML=`Hiiiii`
+        b.append(mar)
+        mar.behavior="alternate"
+        mar.direction="right"
+        mar.loop="2"
+        mar.width="50%"
+        mar.scrollAmount="30"
+        console.log(mar)
+
+
+
+
+
+
+
+
+       
+
+    </script>
+</body>
+</html>

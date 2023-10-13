@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //  creating orderd list
+        
+        let ol1=document.createElement("ol")
+        console.log(ol1)
+        let arr=["HTML","CSS","JAVA SCRIPT","PYTHON"];
+        for (i=0;i<=arr.length-1;i++)
+        {
+            let li1=document.createElement("li")
+            console.log(li1)
+            li1.innerHTML=arr[i]
+            ol1.append(li1)
+        }
+        let b=document.body;
+        b.append(ol1)
+        
+        // ol1.type="A"
+        // ol1.start="3"
+
+        ol1.setAttribute("type","A")
+        ol1.setAttribute("start","3")
+
+        
+        
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let h=document.createElement("h1")
+        h.innerHTML=`welcom to dumbuuuuuuuuuu`
+
+        let img=document.createElement("img")
+        img.src="butter5.jpg"
+
+        let vid=document.createElement("video")
+        vid.src="video.mp4"
+        vid.controls="controls"
+        vid.width="400"
+        vid.height="400"
+
+        let b=document.body;
+        // b.append(h)
+        // b.append(img)
+        // b.append(vid)
+        
+        // instead of above we use at a time
+        // b.append(h,img,vid)
+
+        // instead of using append ,we use appendchild also 
+        b.appendChild(h)
+        b.appendChild(img)
+        b.appendChild(vid)
+    
+//    when we use appendchild then it consider first one only
+        // b.appendChild(h,img,vid)
+
+        // insertbefore we use to move the content to before of any content
+        // here moving the video tag before the h1 tag
+        b.insertBefore(vid,h)
+
+
+       
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-self: center;
+            align-items: center;
+            min-height: 300px;
+            flex-direction: column;
+
+        }
+        button{
+            padding: 20px 50px;
+            border-radius: 50px;
+        }
+        button:hover{
+            transform: scale(1.09);
+            background-color: aqua;
+            color: red;
+            font-size: 25px;
+        } 
+    </style>
+</head>
+<body>
+    <h1>WELCOME TO HEADING TAG</h1>
+    <!-- <button onclick="demo()"></button> -->
+     <button>submit</button>
+
+     <script>
+        // function demo(){
+        //     let h1=document.querySelector("h1");
+        //     h1.style.backgroundColor="violet"
+        //     h1.style.color="white"
+        //     document.body.style.backgroundColor="orange"
+        // }
+        let b=document.querySelector("button");
+        // b.onclick=demo
+
+        // b.addEventListener(`click`,demo)
+        b.addEventListener(`click`,
+        function()
+        {
+            let h1=document.querySelector("h1");
+            h1.style.backgroundColor="violet"
+            h1.style.color="white"
+            document.body.style.backgroundColor="orange"
+        }
+        )
+     </script>
+</body>
+</html>
