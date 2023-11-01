@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr=[1,2,3,4,5,6]
+        for(i=0;i<=arr.length-1;i++)
+    {
+        // console.log(arr[i])
+        if (arr[i]%2==0)
+        {
+            console.log(arr[i])
+        }
+    }
+
+    //instead of using for loop we use map() and foreach()
+
+    //using map() ,in map() function we use retirn keyword and it returns the value
+
+    let a=arr.map((num)=>{
+        // console.log(num)
+        // if(num%2==0)
+        // {
+        //     // console.log(num)
+        //     return num;
+        // }
+        // else{
+        //     return num;
+        // }
+
+        return num*2;
+    })
+    console.log(a)
+
+    //using for each(); in this return keyword is not working ; but for getting value we use empty arr
+
+    let arr2=[]
+    arr.forEach((num)=>{
+        // console.log(num)
+        if(num%2==0)
+        {
+           console.log(num)
+        }
+        arr2.push(num*3)
+    })
+    console.log(arr2)
+
+    </script>
+</body>
+</html>

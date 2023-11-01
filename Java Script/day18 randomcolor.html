@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 700px;
+            flex-direction: column;
+            background-color: yellowgreen;
+        }
+        h1{
+            font-size: 80px;
+            font-style: italic;
+        }
+        button{
+            padding: 60px 100px;
+            border-radius: 20px;
+            font-size: 60px;
+        }
+        button:hover{
+            transform: scale(1.09,1.09);
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>RANDOM COLOR CODE GENERATOR</h1>
+    <h1 id="abc"></h1>
+    <button>GENERATE COLOR</button>
+    <script>
+        function generateColor()
+{
+    let color='#';
+    let colorArr=['a','b','c','d','e','f','0','1','2','3','4','5','A','B','C','6','7','8','D','E','9','F']
+    // console.log(colorArr.length)
+    for(i=0;i<6;i++)
+    {
+        let a=Math.floor(Math.random()*(colorArr.length))
+        console.log(colorArr[a])
+        console.log(a)
+
+        let b=colorArr[a];
+        color+=b;
+        console.log(color)
+    }
+    document.querySelector("#abc").innerHTML=color
+    document.body.style.backgroundColor=color
+
+}    
+document.querySelector("button").addEventListener('click',generateColor)
+generateColor()
+</script>
+</body>
+</html>

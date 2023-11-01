@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        *{
+            margin: 0;
+        }
+        body{
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZmAWnXSQNeKgkuL09Y1KgK_ePDaZ_CaRF_g&usqp=CAU);
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+        nav{
+            color: aliceblue;
+           margin-left: 30px;
+        }
+    
+        nav:hover{
+            color:orange;
+            transform: scale(1.09,1.09);
+        }
+        .d{
+            width: 100%;
+            height: 100px;
+            display: flex; 
+            justify-content:space-between;
+            position: fixed; 
+            align-items: center;  
+            font-size: 20px;
+        }
+        .d2{
+            width: 50%;
+            height: 50px; 
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            color: antiquewhite;
+        }
+        .i2:hover{
+            transform: scale(1.05,1.05);
+            text-decoration: underline;
+        }
+        .i3:hover{
+            transform: scale(1.05,1.05);
+            text-decoration: underline;
+        }
+        .i4:hover{
+            transform: scale(1.05,1.05);
+            text-decoration: underline;
+        }
+        .i5:hover{
+            transform: scale(1.05,1.05);
+            text-decoration: underline;
+        }
+        .d1{
+            color: antiquewhite;
+        }
+        .box{
+            width: 350px;
+            height: 500px;
+            backdrop-filter: blur(5px);
+            position: absolute;
+            border-radius: 30px;
+            left: 200px;
+            top: 100px;
+            box-shadow: -3px 3px 5px wheat, 3px -3px 2px wheat, -3px -3px 5px wheat, 3px 3px 5px wheat;
+            display: flex;
+            justify-content: center; 
+        }
+        table{
+       color: aliceblue;
+        }
+        .td1{
+            color: orange;
+            font-size: 50px;
+        }
+        input{
+            border: 0px ;
+            outline: 0px; 
+            background-color: transparent;
+            width: 200px; 
+            height: 50px;
+            text-decoration: underline ;
+        }
+        button{
+           padding: 20px 30px;
+           border-radius: 30px;
+           background-color: transparent;
+        }
+        button:hover{
+            transform: scale(1.09,1.09);
+            background-color: burlywood;
+            color: rgb(255, 0, 200);
+        }
+        input::placeholder{
+            font-size: 20px;
+            color: aliceblue;
+        }
+     .td1:hover{
+            text-shadow:-2px 2px 2px wheat, 2px -2px 2px wheat, -2px -2px 2px wheat, 2px 2px 2px wheat; ;
+        }
+        </style>
+</head>
+<body>
+    <div class="d">
+        <nav><i class="i1">logo</i></nav>>
+ <div class="d2">
+        <i class="i2">Home</i>
+        <i class="i3">About</i>
+        <i class="i4">Services</i>
+        <i class="i5">Contact</i>
+      </div>
+    </div>
+    <div class="box">
+    <table>
+        <tr>
+            <td class="td1"><center><i>Login</i></center></td>
+        </tr>
+        <tr>
+            <td><input type="text" placeholder="User Name"></td>
+        <td><i class="fa fa-user"></i></td>
+    </tr>
+        <tr>
+            <td><input type="text" placeholder="Phone Number"></td>
+            <td><i class="fa fa-phone"></i></td>
+        </tr>
+        <tr>
+            <td><input type="text" placeholder="Email"></td>
+            <td><i class="fa fa-envelope"></i></td>
+        </tr>
+        <tr>
+            <td><input type="text" placeholder="Password"></td>
+            <td><i class="fa fa-eye"></i></td>
+        </tr>
+        <tr>
+            <td><center><button>Submit</button></center></td>
+        </tr>
+      </table>
+    </div>
+</body>
+</html>

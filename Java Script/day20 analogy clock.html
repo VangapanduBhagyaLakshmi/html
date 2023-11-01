@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 700px;
+            flex-direction: column;
+
+        }
+        .container{
+            position: relative;
+        }
+        .clock{
+            width: 300px;
+            height: 300px;
+            background-color: cadetblue;
+            border-radius: 50%;
+            border: 3px solid red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .clock span{
+            position: absolute;
+            transform: rotate(calc(30deg*var(--a)));
+            inset: 9px;
+            text-align: center;
+        }
+        .clock span i{
+            transform: rotate(calc(-30deg*var(--a)));
+            display: block;
+            color: aliceblue;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        .a{
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            background-color: orange;
+            border-radius: 50%;
+        }
+        .needle b{
+            position: absolute;
+            width: 4px;
+            /* height: 70px; */
+            height: var(--h);
+            /* background-color: red; */
+            background-color: var(--c);
+            border-radius: 30px;
+        }
+        .needle{
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+        }
+    </style>
+</head>
+<body>
+    <h1>WELCOME TO ANALOGY CLOCK</h1>
+    <div class="container">
+        <div class="clock">
+            <div class="needle" id="sec" style="--h:70px;--c:yellowgreen;"><b></b></div>
+            <div class="needle" id="min" style="--h:60px;--c:green;"> <b></b></div>
+            <div class="needle" id="hour" style="--h:50px;--c:red;"> <b></b></div>
+            <div class="a"></div>
+            <span style="--a:1"><i>1</i></span>
+            <span style="--a:2"><i>2</i></span>
+            <span style="--a:3"><i>3</i></span>
+            <span style="--a:4"><i>4</i></span>
+            <span style="--a:5"><i>5</i></span>
+            <span style="--a:6"><i>6</i></span>
+            <span style="--a:7"><i>7</i></span>
+            <span style="--a:8"><i>8</i></span>
+            <span style="--a:9"><i>9</i></span>
+            <span style="--a:10"><i>10</i></span>
+            <span style="--a:11"><i>11</i></span>
+            <span style="--a:12"><i>12</i></span>
+        </div>
+    </div>
+    <script>
+        let hour=document.getElementById("hour")
+        let min=document.getElementById("min")
+        let sec=document.getElementById("sec")
+        function anologClock(){
+            let date = new Date();
+            let h = date.getHours();
+            let m=date.getMinutes()
+            let s=date.getSeconds();
+
+            //hours:- hh=30*h+m/2
+
+            let hh = 30 * h +m / 2;
+            console.log(hh);
+            let mm =6 * m;
+            let ss =6 * s;
+            hour.style.transform=`rotate(${hh}deg)`
+            min.style.transform=`rotate(${mm}deg)`
+            sec.style.transform=`rotate(${ss}deg)`
+        }
+        anologClock()
+        setInterval(() => {
+            anologClock()
+        }, 1000);
+    </script>
+</body>
+</html>

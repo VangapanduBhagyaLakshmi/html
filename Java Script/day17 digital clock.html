@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            min-height: 500px;
+            background-color: black;
+            flex-direction: column;
+            color: white;
+            -webkit-text-stroke:2px yellow;
+            font-style: italic;
+            animation: color 10s ease 1s infinite ;
+        }
+
+        @keyframes color {
+            from{
+                filter: hue-rotate(0deg);
+            }
+            to{
+                filter: hue-rotate(2000deg);
+            }
+        }
+        h2:nth-child(1){
+                 font-size: 90px;
+        }
+        h2:nth-child(2){
+            font-size: 60px;
+        }
+        h1{
+            font-size: 80px;
+        }
+       
+    </style>
+</head>
+<body>
+    <h1>WELCOME TO DIGITAL CLOCK</h1>
+    <div>
+        <h2 id="h1"></h2>
+        <h2 id="h2"></h2>
+    </div>
+    <script>
+        function clock()
+        {
+            let date = new Date();
+
+            let h=date.getHours();
+            let h1=(h>12)?(h-12):h;
+            let h2=(h1<10)?("0"+h1):h1;
+
+            let m=date.getMinutes();
+            let m1=(m<10)?("0"+m):m;
+
+            let s=date.getSeconds();
+            let s1=(s<10)?("0"+s):s;
+
+            let day=date.getDay();
+            let dayArr=["Sunady","Monday","Tuesady","Wednesday","Thursady","Friady","Saturady"];
+
+            let day1=dayArr[day];
+            let date1=date.getDate();
+            let month=date.getMonth();
+            let mothArr=["jan","feb","march","april","may","june","july","aug","sep","oct","nov","dec"];
+            let month1=mothArr[month];
+            let year=date.getFullYear();
+
+            document.getElementById("h1").innerHTML=`${h2} : ${m1} : ${s1}`
+            document.getElementById("h2").innerHTML=`${day1} ${date1} ${month1} ${year}`
+
+            // setTimeout(() => {
+            //     clock()
+            // },1000);
+
+           
+        }
+        clock()
+        
+
+        setIntervel(() => {
+                clock()
+            },1000);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="inp1">
+    <button>CLICK</button>
+    <script>
+        function calculate1()
+        {
+            let inp1=document.querySelector("#inp1").value;
+            console.log(inp1)
+
+            let a=Math.sqrt(inp1)
+            console.log(a)
+            let b=Math.cbrt(inp1)
+            console.log(b)
+            let c=Math.PI
+            console.log(c)
+
+
+            // console.log(Math.exp(3))
+
+            // console.log(Math.pow(9,2))
+
+            // console.log(Math.hypot(3,4))
+
+            // console.log(Math.max(10,40,60,780,10))
+
+            // console.log(Math.min(2,67,40,10))
+        }
+        document.querySelector("button").addEventListener('click',calculate1)
+
+    </script>
+</body>
+</html>

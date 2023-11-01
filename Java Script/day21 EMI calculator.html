@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1>WELCOME TO EMI CALCULATOR</h1> 
+   <div class="parent">
+    <div class="child">
+        <table>
+            <tr>
+                <td>Amount you need  <input type="text" id="amount"></td>
+            </tr>
+            <tr>
+                <td><input type="range" class="range" min="50000" max="4000000" id="amountrange" onchange="amount()"> </td>
+            </tr>
+            <tr class="a">
+                <td>
+                    <pre>&#8377;50,000      &#8377;40,00,000 </pre>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="child">
+        <table>
+            <tr>
+                <td>for <input type="text" id="year" size="10">year</td>
+            </tr>
+            <tr>
+                <td><input type="range" min="1" max="5" id="yearrange" onchange="year()"> </td>
+            </tr>
+            <tr class="a">
+                <td>
+                    <pre>1 year      5 year</pre>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="child">
+        <table>
+            <tr>
+                <td>interest rate <input type="text" id="Interest" size="10"></td>
+            </tr>
+            <tr>
+                <td><input type="range"  min="10.5" max="21" id="interestrange" onchange="interest()" step="0.1"> </td>
+            </tr>
+            <tr class="a">
+                <td>
+                    <pre>10.5%      21% </pre>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <button onclick="emicalculate()">CALCULATE</button>
+   <h1 id="a"></h1>
+   </div>
+
+   <script>
+    function amount(){
+        document.getElementById("amount").value=document.getElementById("amountrange").value;
+    }
+    function year(){
+        document.getElementById("year").value=document.getElementById("yearrange").value;
+    }
+    function interest(){
+        document.getElementById("interest").value=document.getElementById("interestrange").value;
+    }
+
+    function emicalculate(){
+        let p=Number(document.getElementById("amount").value);
+        console.log(typeof p)
+        let N=(document.getElementById("year").value)*12;
+        console.log(typeof N)
+
+        let R=(document.getElementById("interest").value)/12/100;
+        console.log(typeof R)
+
+    }
+   </script>
+</body>
+</html>

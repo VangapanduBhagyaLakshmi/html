@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            /* syntax */
+            /* --custompropertyname:css property value; ===> var() */
+            --a:yellow;
+            --b:green;
+            --c:200px;
+            --d:80px;
+        }
+        body{
+            background-color: aqua;
+        }
+        .div1{
+            /* width: 200px;
+            height: 200px; */
+            width:var(--c);
+            height: var(--c);
+            /* background-color: yellow; */
+            background-color: var(--a);
+            float: left;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .c1{
+            /* width: 80px;
+            height: 80px; */
+            width:var(--d);
+            height: var(--d);
+            /* background-color: green; */
+            background-color: var(--b);
+
+        }
+        h1{
+            /* color: yellow; */
+            color:var(--a) ;
+        }
+
+        .div2{
+            /* width: 200px;
+            height: 200px; */
+            width:var(--c);
+            height: var(--c);
+            /* background-color: green; */
+            background-color: var(--b);
+            float: left;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .c2{
+            /* width: 80px;
+            height: 80px; */
+            width:var(--d);
+            height: var(--d);
+            /* background-color: yellow; */
+            background-color: var(--a);
+
+            
+        }
+        h2{
+            /* color: green; */
+            color:var(--b) ;
+
+        }
+    </style>
+</head>
+<body>
+    <!-- custom properties -->
+    <div class="div1">
+        <div class="c1">
+            <h1>Hii</h1>
+        </div>
+    </div>
+
+    <div class="div2">
+        <div class="c2">
+            <h2>Hii</h2>
+        </div>
+    </div>
+</body>
+</html>

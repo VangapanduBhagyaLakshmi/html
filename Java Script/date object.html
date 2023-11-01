@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let date1=new Date()
+        console.log(date1)
+
+        let day=date1.getDay()
+        console.log(day)
+
+        // switch(day)
+        // {
+        //     case 0:document.write("sunady");
+        //     break;
+        //     case 1:document.write("Monady");
+        //     break;
+        //     case 2:document.write("Tuesady");
+        //     break;
+        //     case 3:document.write("Wednesday");
+        //     break;
+        //     case 4:document.write("Thursday");
+        //     break;
+        //     case 5:document.write("Friaday");
+        //     break;
+        //     case 6:document.write("Saturday");
+        //     break;
+        // }
+
+        let dayArr=["Sunady","Monday","Tuesady","Wednesday","Thursady","Friady","Saturady"]
+        console.log(dayArr[day])
+
+        let month=date1.getMonth()
+        console.log(month)
+        let mothArr=["jan","feb","march","april","may","june","july","aug","sep","oct","nov","dec"]
+        console.log(mothArr[month])
+ 
+        let d=date1.getDate()
+        console.log(d)
+        let y=date1.getFullYear()
+        console.log(y)
+        let h=date1.getHours()
+        console.log(h)
+        
+        // if(h>12)
+        // {
+        //     h=h-12;
+        // }
+        // console.log(h)
+
+        // if(h<10)
+        // {
+        //     h="0"+h
+        // }
+        // console.log(h)
+     
+        let h1=(h>12)?(h-12):h
+        console.log(h1)
+
+         let h2=(h1<10)?("0"+h1):h1
+         console.log(h2)
+
+         let m=date1.getMinutes()
+        //  let m=8;
+        console.log(m)
+        let m1=(m<10)?("0"+m):m;
+        console.log(m1)
+
+        let s=date1.getSeconds()
+        console.log(s)
+        let s1=(s<10)?("0"+s):s;
+        console.log(s1) 
+    </script>
+</body>
+</html>
