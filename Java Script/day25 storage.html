@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="inp1">
+    <br>
+    <input type="text" id="inp2">
+    <button onclick="abc()">submit</button>
+
+    <script>
+        function abc(){
+            let name1=document.querySelector("#inp1").value;
+            localStorage.setItem("Name",name1)
+            let phone=document.querySelector("#inp2").value;
+            localStorage.setItem("Phone no",phone)
+            // localStorage.removeItem("Name")
+            // localStorage.clear()
+            sessionStorage.setItem("Name",name1)
+            sessionStorage.setItem("Phone no",phone)
+        }
+    </script>
+</body>
+</html>

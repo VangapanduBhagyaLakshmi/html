@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr=[1,2,30,40,34,56,75,12,4,6,7];
+
+        let arr1=[]
+        for(i=0;i<=arr.length-1;i++)
+        {
+            if (arr[i]>20)
+            {
+                // console.log(arr[i]) //it will print one by one
+                arr1.push(arr[i]) //it will print in the array foramt ;for this ,push into the empty array by craeting empty arry
+            }
+        }
+        console.log(arr1)
+
+        //instead of using for loop we use filter() is also possible
+
+        let a=arr.filter((num)=>{
+            if(num>20)
+            {
+                return num;
+            }
+        })
+        console.log(a)
+
+        ///every(); For using every(), if condition is satisfied then given true ,if one condition is notsatisfied then it gives false
+
+        let b1=arr.every((num)=>{
+            if(num>1){
+                return num;
+            }
+        })
+        console.log(b1)
+
+        //some(); if one condition is also satisfied it gives True
+
+        let c=arr.some((num)=>{
+            if(num>20)
+            {
+                return num;
+            }
+        })
+        console.log(c)
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr=[1,2,3,4,5,6];
+        let a=arr.reduce((acc,cum)=>{
+            return (acc+cum)
+        }) //here not given any value then defaultly 0
+        console.log(a)
+
+        // ###Tracing
+        // 0+1=1
+        // 1+2=3
+        // 3+3=6
+        // 6+4=10
+        // 10+5=15
+        // 15+6=21
+
+        //acc=accumulation; cum=cumilation
+
+
+// #################################
+        let arr1=[1,3,4,5,6]
+        let b=arr1.reduce((acc,cum)=>{
+            return (acc+cum)
+        },5) //here given value=5, so starts from 5
+        console.log(b)
+        if(b%2==0)
+        {
+            console.log("even number")
+        }
+        else{
+            console.log("odd number")
+        }
+
+
+        //Tracing
+
+        // 5+1=6
+        // 6+3=9
+        // 9+4=13
+        // 13+5=18
+        // 18+6=24
+        // if 24%2==0; even or else odd
+        // o/p: even
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" placeholder="enter name" id="inp1">
+    <button onclick="regExp()">click</button>
+
+    <p id="a"></p>
+
+    <script>
+        function regExp()
+        {
+            let name1=document.querySelector("#inp1").value;
+
+            // let exp=/^[A-Za-z]{3,15}$/
+            let exp=/^[6-9]{1}[0-9]{9}$/
+            if (exp.test(name1))
+            {
+                document.getElementById("inp1").style.
+                border=`3px solid green`
+                document.getElementById("inp1").style.
+                backgroundColor=`red`
+                document.getElementById("inp1").style.
+                color=`green`
+
+                document.getElementById("a").innerHTML=name1
+            }
+            else{
+                document.getElementById("inp1").style.
+                border=`3px solid red`
+                document.getElementById("inp1").style.
+                backgroundColor=`green`
+                document.getElementById("inp1").style.
+                color=`red`
+            }
+
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" placeholder="enter name" id="inp1">
+    <br>
+    <small id="s1"></small>
+    <br>
+    <input type="text" placeholder="enter phone no" id="inp2">
+    <br>
+    <small id="s2"></small>
+    <br>
+    <input type="text" placeholder="Email" id="inp3">
+    <br>
+    <small id="s3"></small>
+    <br>
+    <button>SUBMIT</button>
+
+    <script>
+        function demo()
+        {
+            let name1=document.getElementById("inp1").value;
+            let exp=/^[a-zA-Z]{3,15}&/
+            let a=document.getElementById("inp1")
+            let s1=document.getElementById("s1")
+
+            if(name1=="")
+            {
+                a.style.border="2px solid red"
+                s1.innerHTML="don't leave empty"
+            }
+            else if(exp.test(name1))
+            {
+                localStorage.setItem("Name",name1)
+                sessionStorage.setItem("Name",name1)
+                // s1.innerHTML=localStorage.getItem("Name")
+                s1.innerHTML=sessionStorage.getItem("Name")
+            }
+            else{
+                a.style.border="2px solid red"
+                s1.innerHTML="Invalid user name"
+            }
+
+            //phone number condition
+            let phone=document.getElementById("inp2").value;
+            let exp1=/^[6-9]{1}[0-9]{9}&/
+            let b=document.getElementById("inp2")
+            let s2=document.getElementById("s2")
+
+            if(phone=="")
+            {
+                b.style.border="2px solid red"
+                s2.innerHTML="don't leave empty"
+            }
+            else if(exp.test(phone))
+            {
+                localStorage.setItem("Phone no",phone)
+                sessionStorage.setItem("Phone no",phone)
+                // s2.innerHTML=localStorage.getItem("Phone no")
+                s2.innerHTML=sessionStorage.getItem("Phone no")
+                // localStorage.removeItem("Phone no")
+                // sessionStorage.removeItem("Phone mo")
+            }
+            else{
+                b.style.border="2px solid red"
+                s2.innerHTML="Invalid phone number"
+            }
+
+            let email=document.getElementById("inp3").value;
+            let exp3=/^[a-z0-9._%+\-]+\.[a-z]{2,}$/
+            let c=document.getElementById("inp3")
+            let s3=document.getElementById("s3")
+
+            if (email=="")
+            {
+                c.style.border="2px solid red"
+                s3.innerHTML="don't leave empty"
+            }
+            else if(exp3.test(email))
+            {
+                localStorage.setItem("Email",email)
+                sessionStorage.setItem("Email",email)
+                s3.innerHTML=sessionStorage.getItem("Email")
+            }
+            else{
+                c.style.border="2px solid red"
+                s3.innerHTML="invaild email id"
+            }
+
+            // localStorage.clear()
+            // sessionStorage.clear()
+        
+        }
+        document.querySelector("button").addEventListener('click',demo)
+
+    </script>
+</body>
+</html>
